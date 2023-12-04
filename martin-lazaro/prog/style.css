@@ -1,0 +1,18 @@
+.hist{
+    position: absolute;
+    left: 22%;
+    top: 20%;
+    width: 60%;
+    height: 60%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+    box-shadow: 6px 6px 6px 4px rgba(184, 182, 182, 0.2);
+    font-family: 'arial';
+    }
+
+    @font-face {
+        font-family: 'arial';
+        src: url(Minecraftia-Regular.ttf);
+      }
+      

@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'arial';
+  src: url(Minecraftia-Regular.ttf);
+}
+
+
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+
+body {
+  height: 100%;
+  background-image: url(fundop.png);
+  background-repeat: no-repeat;
+  background-size: 2050px;
+
+}
+
+
+#hist {
+  position: absolute;
+  left: 22%;
+  top: 20%;
+  width: 60%;
+  /* height: 60%; */
+  /* z-index: -1; */
+}
+
+#opc {
+  font-family: 'arial';
+  /* position: absolute; */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1px;
+  /* top: 2300%;/* 
+  /* left: 33%; */
+}
+
+a:hover {
+    background-image: url(wall.jpg);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+#pers {
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  height: 150px;
+}
+
+#perstxt {
+  position: absolute;
+  color: white;
+  left: 0.8%;
+  top: 15%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+#but {
+  border-radius: 10px;
+  font-size: 24px;
+  color: white;
+  background-color: darkslategrey;
+}
+
+#but:hover {
+  background-color: rgb(43, 43, 43);
+  text-decoration: none;
+}
+
+.typewriter {
+  font-family: 'arial';
+  background-color: rgba(0, 0, 0, 0.692);
+  /* position: absolute; */
+  color: white;
+  text-align: center;
+  /* width: 75%; */
+  font-size: 18.5px;
+  top: 200%;
+  left: 10%;
+  padding: 10px;
+  box-shadow: 6px 6px 6px 4px rgba(184, 182, 182, 0.2);
+}
+
+
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 0;
+  }
+
+  100% {
+    width: 100;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
+
+#vi{
+  color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 30px;
+}
+
+
+#vi:hover{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.652);
+  text-shadow:5px 10px 10px rgb(255, 0, 0);
+}
