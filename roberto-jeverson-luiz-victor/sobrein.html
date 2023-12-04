@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the game</title>
+
+    <style>
+
+        body{
+            font-family: 'Poppins' sans-serif;
+            font-size: 50px;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-top: 40px;
+        }
+        .card{
+            border-radius: 5px;
+            box-shadow: 7px 7px 13px 0 rgba(50,50 ,50, 0.22),  7px 7px 13px 0 rgba(50,50 ,50, 0.22) ;
+            padding: 40px;
+            margin: 40px;
+            width: 600px;
+            transition: all 0.3s ease-out;
+            font-size: 80px;
+        }
+
+        .card:hover{
+            transform: translateY(-9px);
+            cursor: pointer;
+        }
+        .card p{
+            color: black;
+            font-size: 26px;
+        }
+        .imagem{
+            float: right;
+            max-width: 300px;
+            max-height: 300px;
+            border-radius: 4px;
+        }
+        
+
+        @media screen  and (max-width: 1920px){
+            .container{
+                flex-direction: column;
+            }
+        }
+
+        header{
+            margin-top: 30px;
+            background-color: bisque;
+        }
+        a{
+            position: relative;
+            left: 80%;
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            border-radius: 6px;
+            padding: 5px;
+        }
+        a:hover{
+
+            padding: 6px;
+        }
+
+        .p{
+            font-size: 30px;
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <audio autoplay loop>
+        <source src="Jogo/som/inicial2.mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag de áudio.
+      </audio>
+
+    <header>
+        <a href="ingles.html">Back</a>
+    </header>
+
+   <div class="container">
+
+    <div class="card membro">
+
+        <img class="imagem" src="Jogo/imagem/Jeverson.jpg" alt="">
+
+        <h5>Jeverson Fagundes</h5>
+
+        <p>Computer Technician Course</p>
+        <p>Everything related to the game</p>
+
+    </div>
+
+    <div class=" card membro">
+
+        <img class="imagem" src="Jogo/imagem/Luiz.webp" alt="">
+
+        <h5>Luiz Guilherme</h5>
+
+       
+        <p>Computer Technician Course</p>
+        <p> Everything related to the game</p>
+        
+    </div>
+
+    <div class="card membro">
+
+        <img class="imagem" src="Jogo/imagem/Roberto.jpg" alt="">
+
+        <h5>Roberto Graziadei</h5>
+
+       
+        <p>Computer Technician Course</p>
+        <p>Everything related to the game</p>
+        
+    </div>
+
+    <div class="card membro">
+
+        <img class="imagem" src="Jogo/imagem/Yan.jpg" alt="">
+
+        <h5>Victor Carvalho</h5>
+
+        
+        <p>Computer Technician Course</p>
+        <p>Everything related to the game</p>
+        
+    </div>
+
+   </div>
+
+   <p class="p"> Thank you for playing our game! Thank you for participating and look forward to part 2! See you later.</p>
+
+</body>
+</html>

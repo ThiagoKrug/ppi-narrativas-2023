@@ -30,8 +30,8 @@ echo '<td>'.$dados['texto2'] .'</td>';
 echo '<td>'.$dados['escolha1'] .'</td>';
 echo '<td>'.$dados['escolha2'] .'</td>';
 echo '<td>'.$dados['nome_imagem'].'</td>';
-echo '<td> <a href="formedit.php?id='.$dados['id_historia'].'"> <img src="Imagem/editar.png" width="20" height="20"> </a> </td>';
-echo '<td> <a href="excluir?id='.$dados['id_historia'].'"> <img src="Imagem/lixeira.png" width="20" height="20"> </a> </td>';
+echo '<td> <a href="formedit.php?id='.$dados['id_historia'].'"> <img src="imagem/editar.png" width="20" height="20"> </a> </td>';
+echo '<td> <a href="excluir?id='.$dados['id_historia'].'"> <img src="imagem/lixeira.png" width="20" height="20"> </a> </td>';
 echo '</tr>';
 }
 
