@@ -18,7 +18,7 @@ $dados = mysqli_fetch_assoc($resultado);
 <audio autoplay loop>
   <source  src="<?php if($id == 97 or $id == 61 or $id==95 or $id==58 or $id==84){echo $dados['audio'];} if($id==49 or $id==46 or $id==48 or $id==54 or $id==63) {echo '';}
    else {
-    echo 'audios/floresta';
+    echo 'audios/floresta.mp3';
   };?>" >
 </audio>
 <audio autoplay >
@@ -65,7 +65,7 @@ border-color:black;
     width: 43%;
   }
   body{
-    background-image: url('imagens/backgrau'); 
+    background-image: url('imagens/backgrau.jpg'); 
     background-size: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -107,7 +107,7 @@ while ($dados1 = mysqli_fetch_assoc($resultado1)) {
     echo '<td> <a href="jogo.php?id='.$dados1['id_destino'].'"> <button>'.$dados1['texto'].'</button> </a> </td>';
     echo '  <br>  ';}
     ?>
-     <a href='index.html' > <img src='imagens/casinha' width="50px"> </a></div>
+     <a href='index.html' > <img src='imagens/casinha.png' width="50px"> </a></div>
     
 </h1>
 

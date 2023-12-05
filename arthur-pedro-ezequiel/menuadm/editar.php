@@ -26,6 +26,6 @@ mysqli_query($conexao,$sql);
 </head>
 <body>
     <h1>Editado com sucesso.</h1><br>
-    <a herf="listar.php"> Voltar para lista </a>
+    <a href="listar.php"> Consultar Lista </a>
 </body>
 </html>
