@@ -69,7 +69,7 @@ a{
 <body>
 
 <audio autoplay loop>
-        <source src="som/morte.mp3" type="audio/mpeg">
+        <source src="Jogo/som/morte.mp3" type="audio/mpeg">
         Seu navegador não suporta a tag de áudio.
       </audio>
 
