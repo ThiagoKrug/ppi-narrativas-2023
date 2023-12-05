@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar História</title>
+    <style>
+
+        @font-face {
+        font-family: 'Quickle';
+        src: url('fontes/Quickle.ttf') format('truetype');
+        font-style: normal;
+        font-weight: normal;
+        }
+        
+        @font-face {
+        font-family: 'Maquina';
+        src: url('fontes/NeoBulletin Bold.ttf') format('truetype');
+        font-style: normal;
+        font-weight: normal;
+      }
+        
+        body{ 
+        background-image: url(imagens/catacumba.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin:0;
+    }
+    form{
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        text-align: center;
+    } 
+
+       .botao{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border: 2px solid black;
+        border-radius: 5px;
+        color: black;
+        background-color: transparent;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Efeito de hover */
+        .botao:hover {
+        background-color: black;
+        color: #fff;
+       }
+       /* Estilos para os campos de input */
+        input[type="text"], textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #e5e5e5;
+        }
+        .texto{
+            font-family: Maquina, sans-serif;
+            color:black;
+            font-size: 20px;
+        }
+        .titulo{
+            font-family: Quickle, sans-serif;
+            font-size: 17px;
+
+        }
+        .textobotao{
+            font-family: Arial, sans-serif;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+     <form action="cadastrar.php" method="post">
+        <div class=titulo> <h1> Cadastrar História</h1></div>
+
+        <div class="texto"> Texto da história:</div>
+        <textarea name="texto" rows="4" cols="30"></textarea>
+        
+        <div class="texto">URL da imagem:</div>
+        <input type="text" name="imagem"> <br> <br>
+
+        <input class="botao" type="submit" value="Cadastrar">
+
+        <a class="botao" href="crud.php"> <div class="textobotao">Voltar </div></a>
+    </form>
+
+</body>
+</html>
