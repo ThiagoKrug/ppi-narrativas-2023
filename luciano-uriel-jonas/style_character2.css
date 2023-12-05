@@ -1,0 +1,63 @@
+body{
+    background-image: url(bequigroundi_cenas.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#image{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+}
+.cena{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    bottom: 5%;
+    top: 5%;
+}
+#img{
+    size: 20px;
+}
+#conteudo{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    left: 45%;
+    background-image: url(The_last_breath.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+p{
+ font-size: 26px;
+ font-family: sans-serif;
+ font-weight: bold;
+ position: absolute;
+ top: 30%;
+ margin-left: 8px;
+ margin-right: 8px;
+}
+#continuar{
+    position: absolute;
+    top: 80%;
+    left: 63%;
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+#continuar:hover{
+    position: absolute;
+    top: 80%;
+    left: 63%;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(168, 18, 18);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}

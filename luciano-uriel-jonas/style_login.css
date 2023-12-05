@@ -1,0 +1,177 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(bckg.jpeg);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-size: 100%;
+  background-repeat: no-repeat;
+}
+.content{
+  width: 125vh;
+    min-height: 560px;    
+    margin: 0px auto;
+    position: relative;   
+
+}
+#cadastro,
+#login {
+    position: absolute;
+    width: 125vh;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+     
+    border-radius: 5px;
+     
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+   
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+  
+} 
+.card {
+    background-color: rgba(19, 19, 19, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    width:280px;
+    margin-top: 12%;
+    border-bottom: 5px solid rgb(179, 0, 0);
+    border-right: 5px solid rgb(179, 0, 0);
+}
+.card-header {
+    padding-bottom: 50px;
+    opacity: 0.8;
+    color: rgb(255, 0, 0);
+}
+.card-header::after {
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: rgb(255, 0, 0);
+    display: block;
+    margin-top: -17px;
+    margin-left: -5px;
+}
+.card-content label {
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding:10px 0;
+}
+.card-content-area input {
+    margin-top: 10px;
+    padding:0 5px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #e1e1e1;
+    outline: none;
+    color: #fff;
+}
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+.card-footer .submit{
+    width: 100%;
+    height: 40px;
+    background-color: #d70000;
+    border:none;
+    color:#e1e1e1;
+    margin: 10px 0;
+}
+.card-footer .submit:hover{
+    background-color: #c50000;
+    color: black;
+}
+.card-footer a {
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+}
+#link_cadastro{
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.8;
+}
+a{
+    text-decoration: none;
+    color: #c50000;
+    padding-left: 10px;
+}
+#erro_login{
+  color: rgb(252, 252, 252);
+  text-decoration: underline;
+}
+
+/* Efeito ao clicar no botão ( Ir para Login ) */
+#paracadastro:target ~ .content #cadastro,
+#paralogin:target ~ .content #login{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+ 
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+ 
+/* Efeito ao clicar no botão ( Cadastre-se ) */
+#registro:target ~ .content #login,
+#paralogin:target ~ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+/*fadeInLeft*/
+@-webkit-keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+  }
+   
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+   
+  /*fadeOutLeft*/
+  @-webkit-keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+    }
+  }
+   
+  @keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }

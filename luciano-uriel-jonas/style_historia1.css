@@ -1,0 +1,141 @@
+body{
+    background-image: url(bequigroundi_cenas.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#image{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+}
+.cena{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    bottom: 5%;
+    top: 5%;
+}
+#img{
+    size: 20px;
+    position: absolute;
+    height: 837px;
+    width: 778px;
+}
+#conteudo{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    left: 45%;
+    background-image: url(The_last_breath.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.texto{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.fala{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+#escolha1{
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+#escolha2{
+    position: absolute;
+    top: 85%;
+    left: 65%;
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+#continuar{
+    position: absolute;
+    top: 87%;
+    left: 33%;
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+#continuar:hover{
+    position: absolute;
+    top: 87%;
+    left: 33%;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(93, 241, 118);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}
+.morte{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    margin-left: 8px;
+    text-shadow: 1px 2px 5px black;
+}
+.neutro{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 0);
+    margin-left: 8px;
+    text-shadow: 1px 2px 5px black;
+}
+.bom{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 255, 0);
+    margin-left: 8px;
+    text-shadow: 1px 2px 5px black;
+}
+.ruim{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.721);
+    margin-left: 8px;
+    text-shadow: 1px 2px 5px black;
+}
+#escolha1:hover{
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(93, 241, 118);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}
+#escolha2:hover{
+    position: absolute;
+    top: 85%;
+    left: 65%;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(93, 241, 118);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}

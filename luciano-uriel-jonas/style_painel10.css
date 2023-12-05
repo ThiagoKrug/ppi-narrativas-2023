@@ -1,0 +1,117 @@
+body{
+  background-image: url(bckg.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.quadrado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%); 
+  width: 95%;
+  height: 95%;
+}
+h2{
+  color: rgb(255, 255, 255);
+}
+.content{
+position: absolute;
+width: 400px;
+right: 80%;
+}
+#novojogo{
+  background-color: rgb(192, 25, 25);
+  width: 60%;
+  height: 60px;
+  margin-top: 135px;
+  margin-left: 175px;
+  border-radius: 10px;
+  border-color: rgb(9, 11, 10);
+  border-top: 2px;
+  border-left: 2px;
+  font-weight: bold;
+  position: relative;
+}
+#maincharacter{
+  background-color: rgb(192, 25, 25);
+  width: 60%;
+  height: 60px;
+  margin-top:40px;
+  margin-left: 175px;
+  border-radius: 10px;
+  border-color: rgb(9, 11, 10);
+  border-top: 2px;
+  border-left: 2px;
+  font-weight: bold;
+}
+#trocarconta{
+  background-color: rgb(192, 25, 25);
+  width: 60%;
+  height: 60px;
+  margin-top:40px;
+  margin-left: 175px;
+  border-radius: 10px;
+  border-color: rgb(9, 11, 10);
+  border-top: 2px;
+  border-left: 2px;
+  font-weight: bold;
+}
+#trocarconta:hover,
+#maincharacter:hover,
+#novojogo:hover{
+  background-color: rgb(146, 19, 19);
+  cursor: pointer;
+}
+#trocarconta:active,
+#maincharacter:active,
+#novojogo:active{
+  background-color: rgb(146, 19, 19);
+  cursor: pointer;
+  border-color: rgb(9, 11, 10);
+  border-top: 2px;
+  border-left: 2px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+h1{
+  color: rgb(203, 28, 28);
+  right: 20%;
+  font-family: Georgia;
+  font-size: 60px;
+  position: relative;
+  left:10px;
+}
+/* Para sinopse*/
+h2{
+  font-size: 50px;
+  position: relative;
+  bottom: 30px;
+  left: 20px;
+}
+p{
+  color: rgb(255, 255, 255); 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  margin: 30px 20px 30px 10px;
+  overflow: hidden;
+  width: 30em;
+  animation: type 2s steps(60, end);
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+}
+.sinopse{
+  position: absolute;
+  top: 200px;
+  right: 150px;
+  width: 750px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.733);
+  border-radius: 12px;
+}
+.aviso{
+position: absolute;
+left: 90%;
+color: white;
+}
