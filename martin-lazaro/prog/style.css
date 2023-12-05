@@ -15,4 +15,14 @@
         font-family: 'arial';
         src: url(Minecraftia-Regular.ttf);
       }
+   
+
+    #but2{
+      position: relative;
+      border-radius: 10px;
+      left: 50%;
+      font-size: 24px;
+      color: white;
+      background-color: darkslategrey;
+    }
       

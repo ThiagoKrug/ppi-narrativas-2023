@@ -104,7 +104,7 @@
 
     #typewriter{
     position: absolute;
-    left: 15%;
+    left: 19%;
     color: line; 
     font-size: 15px;
     margin: 10px 0 0 10px;
@@ -141,7 +141,7 @@
 
 #card {
    position: absolute;
-   left: 18%;
+   left: 23%;
    top: 20%;
    width: 55%;
    height: 65%;

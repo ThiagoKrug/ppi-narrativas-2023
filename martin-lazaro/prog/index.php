@@ -9,18 +9,6 @@
 <body>
     <style>
 
-        #mor1 {
-         position: absolute;
-         left: -2%;
-         top: 15%;  
-        }
-
-        #mor2 {
-         position: absolute;
-         left: 48%;
-         top: 15%;  
-        }
-
         body {
             background-image: url(lobisomem.jpg);
             background-repeat: no-repeat;
@@ -32,7 +20,7 @@
             cursor: pointer;
     border: solid 1px white;
     position: absolute;
-    top: 50%;
+    top: 64%;
     left: 20%;
     height: 70px;
     width: 200px;
@@ -48,25 +36,6 @@
     transform: scale(1.2)
 }
 
-#but1{
-    cursor: pointer;
-    border: solid 1px white;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    height: 70px;
-    width: 200px;
-    border-radius: 20px;
-    color: white;
-    background-color: black;
-    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
-}
-
-   #but1:hover{
-    background-color: #333;
-    color: white;
-    transform: scale(1.2)
-}
 
   #name {
     font-family: 'arial';
@@ -83,7 +52,7 @@
         cursor: pointer;
         border: solid 1px white;
     position: absolute;
-    top: 60%;
+    top: 78%;
     left: 20%;
     height: 70px;
     width: 200px;
@@ -105,10 +74,8 @@
 }
     </style>
         </div>
-     <img src="mor.gif" alt="tedy" id="mor1">
-        <img src="mor.gif" alt="tedy" id="mor2">
     </form>
-    <a href="jogo?id=1"><button id="but">I N I C I A R</button></a>
+    <a href="jogo.php?id=1"><button id="but">I N I C I A R</button></a>
     <a href="sinopse.php"><button id="but2">SYNOPSIS</button></a>
     
     <h1 id="name">DON'T ESCAPE</h1>

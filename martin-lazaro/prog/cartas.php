@@ -58,8 +58,8 @@
 
         #opc2 {
         position: absolute;
-        left: 38%;
-        top: 90%;
+        left: 3%;
+        top: 100%;
         width: 70%;
         height: 70%;
         z-index: -1;
@@ -93,7 +93,7 @@
     #typewriter{
       font-family: arial;
       position: absolute;
-      left: 15%;
+      left: 19%;
   color: line; 
   font-size: 20px;
   margin: 10px 0 0 10px;
@@ -136,11 +136,11 @@
    position: absolute;
    left: 28%;
    top: 20%;
-   height: 350px;
+   height: 300px;
 }
 
 
-#but {
+#but2 {
   border-radius: 10px;
   border: none;
   height: 60px;
@@ -149,7 +149,7 @@
   background-color: darkslategrey;
 }
 
-#but:hover {
+#but2:hover {
   background-color: rgb(43, 43, 43);
   text-decoration: none;
 }
@@ -157,11 +157,10 @@
 </head>
 <body>
     <div class="hist">
-    <p style="color: white; font-size: 35px;" id="typewriter"> O que devo jogar?
-</p>
+    <p style="color: white; font-size: 35px;" id="typewriter"> O que devo jogar? </p>
     <img src="cartas.png" alt="tedy" id="card">
                 <div id="opc2">
-                <a href='cutscene.php'><button id="but"> Continuar</button></a> <br> <br>
+                <a href='cutscene.php'><button id="but2"> Continuar</button></a> <br> <br>
                 </div>
     </div>
     <audio autoplay>
