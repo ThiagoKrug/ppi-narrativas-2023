@@ -1,0 +1,99 @@
+#corpao {
+    border: 20px double rgb(206, 193, 174);
+    padding: 90px;
+    background-color: rgb(59, 41, 6);
+    width: 50%;
+    margin-left: 18.1%;
+    box-shadow: 9px 7px 7px 9px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: absolute;
+    top: 25%;
+}
+
+@font-face {
+    font-family: 'Cardinal';
+    src: url('Cardinal.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'jupiteroid';
+    src: url('Jupiteroid-Bold.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'botao';
+    src: url('Vogue.ttf') format('truetype')
+}
+
+button {
+
+    background-color:  rgba(163, 129, 55, 0.767);
+    border: solid 3px rgb(206, 193, 174);
+    color: white;
+    padding: 15px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.escolhas a {
+    color: rgb(206, 193, 174);
+    font-family: 'jupiteroid', 'Times', 'serif';
+    font-size: 20px;
+    letter-spacing: 5px;
+    opacity: 1;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 2px black,
+        2px 0 black, 0 -1px black;
+    font-family: 'botao', 'Times', 'serif';
+    text-decoration: none;
+    
+    padding: 15px 32px;
+}
+
+.escolhas{
+    text-align: center ;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+}
+
+input{
+    width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 50px;
+
+}
+.conteiner{
+    border: 20px double rgb(206, 193, 174);
+    padding: 90px;
+    background-color: rgb(59, 41, 6);
+    width: 50%;
+    margin-left: 18.1%;
+    box-shadow: 9px 7px 7px 9px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: absolute;
+    top: 25%;
+    justify-content: center;
+    font-family: 'jupiteroid', 'Times', 'serif';
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.titulo {
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    font-family: 'jupiteroid', 'Times', 'serif';
+    font-size: 50px;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 2px black,
+        2px 0 black, 0 -1px black;
+}

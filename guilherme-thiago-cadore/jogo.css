@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Cardinal';
+    src: url('Cardinal.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'jupiteroid';
+    src: url('Jupiteroid-Bold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'botao';
+    src: url('Vogue.ttf') format('truetype')
+}
+
+.texto {
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    font-family: 'jupiteroid', 'Times', 'serif';
+    font-size: 28px;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 2px black,
+        2px 0 black, 0 -1px black;
+}
+
+
+#corpao {
+    border: 20px double rgb(206, 193, 174);
+    padding: 100px;
+    background-color: rgb(59, 41, 6);
+    width: 50%;
+    margin-left: 18.1%;
+    box-shadow: 7px 5px 5px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+img {
+
+    border: 20px solid;
+    border-image: url("imagens/bordacerta.png") 38 round;
+    box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.img {
+    image-rendering: auto;
+    image-resolution: 360px;
+    margin-left: center;
+    text-align: center;
+}
+
+.escolhas {
+    text-align: center;
+}
+
+.escolhas a {
+    color: rgb(206, 193, 174);
+    font-family: 'jupiteroid', 'Times', 'serif';
+    font-size: 20px;
+    letter-spacing: 5px;
+    opacity: 1;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 2px black,
+        2px 0 black, 0 -1px black;
+    font-family: 'botao', 'Times', 'serif';
+    text-decoration: none;
+}
+
+.botao {
+    border: solid 5px rgb(206, 193, 174);
+    padding: 15px;
+    background-color: rgba(163, 129, 55, 0.767);
+     width: 65%; 
+     margin-left: 17%;
+    box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
