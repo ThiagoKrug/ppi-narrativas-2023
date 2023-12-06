@@ -64,7 +64,7 @@ $historia = mysqli_fetch_assoc($resultado);
   }
 
   if ($historia['fim'] != 1) {
-    echo '<a id="vi" href="index.php">Voltar ao inicio</a>';
+    echo '<a id="vi" href="index.php">Voltar ao início</a>';
   }
 
 

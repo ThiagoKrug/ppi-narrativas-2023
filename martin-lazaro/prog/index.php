@@ -68,6 +68,27 @@
     transform: scale(1.2)
     }
 
+    #but3{
+        cursor: pointer;
+        border: solid 1px white;
+    position: absolute;
+    top: 78%;
+    left: 3%;
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease; 
+    }
+
+    #but3:hover{
+    background-color: #333;
+    color: white;
+    transform: scale(1.2)
+    }
+
+
   @font-face {
   font-family: 'arial';
   src: url(Minecraftia-Regular.ttf);
@@ -77,7 +98,7 @@
     </form>
     <a href="jogo.php?id=1"><button id="but">I N I C I A R</button></a>
     <a href="sinopse.php"><button id="but2">SYNOPSIS</button></a>
-    
+    <a href="sinopsy.php"><button id="but3">SINOPSE</button></a>
     <h1 id="name">DON'T ESCAPE</h1>
 </body>
 </html>
