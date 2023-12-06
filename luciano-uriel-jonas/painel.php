@@ -26,9 +26,9 @@ include('verifica_login.php');
 </div>
 </div>
 <div class="content">
-<div><a href="historia"><button id="novojogo">New Game</button></div>
-<div><a href="main_character"><button id="maincharacter">Main Character</button></div>
-<div><a href="logout"><button id="trocarconta">Logout</button></a></div>
+<div><a href="historia.php"><button id="novojogo">New Game</button></div>
+<div><a href="main_character.php"><button id="maincharacter">Main Character</button></div>
+<div><a href="logout.php"><button id="trocarconta">Logout</button></a></div>
 </div>
 </div>
 </body>

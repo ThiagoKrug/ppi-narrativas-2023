@@ -18,7 +18,7 @@ include("conecta.php");
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
 if(empty($_GET['id'])) {
-  header('Location: historia?id=1');
+  header('Location: historia.php?id=1');
   exit();
 }
 if (isset($_GET["id"])){
@@ -43,13 +43,13 @@ if ($id==1) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=2"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=2"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=2";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=7"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=7"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -69,7 +69,7 @@ if ($id==2) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=3"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=3"><button id="continuar">Continuar.</button></a>';
 
 
   echo '</div>';
@@ -90,7 +90,7 @@ if ($id==3) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=4"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=4"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -114,13 +114,13 @@ if ($id==4) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=5"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=5"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=4";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=6"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=6"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -140,7 +140,7 @@ if ($id==5) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=6"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=6"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -160,7 +160,7 @@ if ($id==6) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=15"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=15"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -180,7 +180,7 @@ if ($id==7) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=8"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=8"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -204,13 +204,13 @@ if ($id==8) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=9"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=9"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=6";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=29"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=29"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -230,7 +230,7 @@ if ($id==9) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=10"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=10"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -254,13 +254,13 @@ if ($id==10) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=30"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=30"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=8";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=11"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=11"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -280,7 +280,7 @@ if ($id==11) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=12"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=12"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -304,13 +304,13 @@ if ($id==12) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=13"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=13"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=10";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=14"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=14"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -330,7 +330,7 @@ if ($id==13) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=93"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=93"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -350,7 +350,7 @@ if ($id==14) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=93"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=93"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -370,7 +370,7 @@ if ($id==15) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=16"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=16"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -394,13 +394,13 @@ if ($id==16) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=17"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=17"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=12";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=23"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=23"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -424,13 +424,13 @@ if ($id==17) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=18"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=18"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=14";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=24"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=24"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -454,13 +454,13 @@ if ($id==18) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=19"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=19"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=16";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=21"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=21"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -480,7 +480,7 @@ if ($id==19) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=20"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=20"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -500,7 +500,7 @@ if ($id==20) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=27"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=27"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -520,7 +520,7 @@ if ($id==21) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=22"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=22"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -540,7 +540,7 @@ if ($id==22) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=27"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=27"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -564,13 +564,13 @@ if ($id==23) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=18"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=18"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=18";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=24"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=24"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -594,13 +594,13 @@ if ($id==24) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=25"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=25"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=20";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=26"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=26"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -620,7 +620,7 @@ if ($id==25) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -640,7 +640,7 @@ if ($id==26) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=18"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=18"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -660,7 +660,7 @@ if ($id==27) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=28"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=28"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -684,13 +684,13 @@ if ($id==28) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=32"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=32"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=22";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=35"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=35"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -714,13 +714,13 @@ if ($id==29) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=30"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=30"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=24";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=11"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=11"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -740,7 +740,7 @@ if ($id==30) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=31"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=31"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -760,7 +760,7 @@ if ($id==31) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=11"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=11"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -784,13 +784,13 @@ if ($id==32) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=33"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=33"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=26";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=41"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=41"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -814,13 +814,13 @@ if ($id==33) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=34"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=34"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=28";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=38"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=38"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -840,7 +840,7 @@ if ($id==34) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=41"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=41"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -864,13 +864,13 @@ if ($id==35) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=36"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=36"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=30";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=40"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=40"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -894,13 +894,13 @@ if ($id==36) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=37"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=37"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=32";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=39"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=39"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -920,7 +920,7 @@ if ($id==37) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=41"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=41"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -940,7 +940,7 @@ if ($id==38) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=41"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=41"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -960,7 +960,7 @@ if ($id==39) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -980,7 +980,7 @@ if ($id==40) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=41"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=41"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -1000,7 +1000,7 @@ if ($id==41) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=42"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=42"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -1020,7 +1020,7 @@ if ($id==42) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=43"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=43"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -1044,13 +1044,13 @@ if ($id==43) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=44"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=44"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=34";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=52"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=52"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1074,13 +1074,13 @@ if ($id==44) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=45"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=45"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=36";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=46"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=46"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1100,7 +1100,7 @@ if ($id==45) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=47"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=47"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -1120,7 +1120,7 @@ if ($id==46) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=47"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=47"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -1140,7 +1140,7 @@ if ($id==47) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=48"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=48"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -1160,7 +1160,7 @@ if ($id==48) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=49"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=49"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -1185,13 +1185,13 @@ if ($id==49) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=50"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=50"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=38";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=51"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=51"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1211,7 +1211,7 @@ if ($id==50) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=53"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=53"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -1231,7 +1231,7 @@ if ($id==51) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=53"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=53"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -1251,7 +1251,7 @@ if ($id==52) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o incio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o incio.</button></a>';
 
   echo '</div>';
 }
@@ -1275,13 +1275,13 @@ if ($id==53) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=54"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=54"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=40";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=82"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=82"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1301,7 +1301,7 @@ if ($id==54) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=55"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=55"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -1325,13 +1325,13 @@ if ($id==55) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=56"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=56"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=42";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=73"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=73"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1355,13 +1355,13 @@ if ($id==56) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=57"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=57"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=44";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=64"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=64"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1385,13 +1385,13 @@ if ($id==57) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=58"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=58"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=46";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=65"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=65"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1415,13 +1415,13 @@ if ($id==58) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=59"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=59"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=48";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=66"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=66"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1445,13 +1445,13 @@ if ($id==59) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=60"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=60"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=50";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=67"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=67"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1475,13 +1475,13 @@ if ($id==60) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=61"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=61"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=52";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=68"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=68"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1505,13 +1505,13 @@ if ($id==61) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=62"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=62"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=54";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=69"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=69"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1535,13 +1535,13 @@ if ($id==62) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=63"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=63"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=56";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=72"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=72"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1561,7 +1561,7 @@ if ($id==63) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -1581,7 +1581,7 @@ if ($id==64) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=57"><button id="continuar">Explorar a área.</button></a>';
+  echo '<a href="historia.php?id=57"><button id="continuar">Explorar a área.</button></a>';
 
   echo '</div>';
 }
@@ -1601,7 +1601,7 @@ if ($id==65) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -1621,7 +1621,7 @@ if ($id==66) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=59"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=59"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -1641,7 +1641,7 @@ if ($id==67) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -1661,7 +1661,7 @@ if ($id==68) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -1685,13 +1685,13 @@ if ($id==69) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=70"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=70"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=58";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=71"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=71"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1711,7 +1711,7 @@ if ($id==70) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -1731,7 +1731,7 @@ if ($id==71) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -1751,7 +1751,7 @@ if ($id==72) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -1771,7 +1771,7 @@ if ($id==73) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=74"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=74"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -1795,13 +1795,13 @@ if ($id==74) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=75"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=75"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=60";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=80"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=80"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1825,13 +1825,13 @@ if ($id==75) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=76"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=76"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=62";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=79"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=79"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1855,13 +1855,13 @@ if ($id==76) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=77"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=77"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=64";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=78"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=78"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -1881,7 +1881,7 @@ if ($id==77) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -1901,7 +1901,7 @@ if ($id==78) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -1921,7 +1921,7 @@ if ($id==79) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -1941,7 +1941,7 @@ if ($id==80) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=81"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=81"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -1961,7 +1961,7 @@ if ($id==81) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -1982,7 +1982,7 @@ if ($id==82) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=83"><button id="continuar">Investigar o quarto de onde vem o som.</button></a>';
+  echo '<a href="historia.php?id=83"><button id="continuar">Investigar o quarto de onde vem o som.</button></a>';
 
   echo '</div>';
 }
@@ -2006,13 +2006,13 @@ if ($id==83) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=84"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=84"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=68";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=92"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=92"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -2036,13 +2036,13 @@ if ($id==84) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=85"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=85"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=70";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=88"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=88"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -2062,7 +2062,7 @@ if ($id==85) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=86"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=86"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2086,13 +2086,13 @@ if ($id==86) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=87"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=87"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=72";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=89"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=89"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -2112,7 +2112,7 @@ if ($id==87) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -2132,7 +2132,7 @@ if ($id==88) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -2156,13 +2156,13 @@ if ($id==89) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=90"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=90"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=74";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=91"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=91"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -2182,7 +2182,7 @@ if ($id==90) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -2202,7 +2202,7 @@ if ($id==91) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -2222,7 +2222,7 @@ if ($id==92) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -2243,7 +2243,7 @@ if ($id==93) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=94"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=94"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2263,7 +2263,7 @@ if ($id==94) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=95"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=95"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2287,13 +2287,13 @@ if ($id==95) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=96"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=96"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=76";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=97"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=97"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -2313,7 +2313,7 @@ if ($id==96) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -2333,7 +2333,7 @@ if ($id==97) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=98"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=98"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2353,7 +2353,7 @@ if ($id==98) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=99"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=99"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2373,7 +2373,7 @@ if ($id==99) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=100"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=100"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2393,7 +2393,7 @@ if ($id==100) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=101"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=101"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2417,13 +2417,13 @@ if ($id==101) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=102"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=102"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=78";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=103"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=103"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -2443,7 +2443,7 @@ if ($id==102) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=104"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=104"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2463,7 +2463,7 @@ if ($id==103) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o incio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o incio.</button></a>';
 
   echo '</div>';
 }
@@ -2483,7 +2483,7 @@ if ($id==104) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=105"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=105"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2507,13 +2507,13 @@ if ($id==105) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=106"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=106"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=80";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=107"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=107"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -2533,7 +2533,7 @@ if ($id==106) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=107"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=107"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2557,13 +2557,13 @@ if ($id==107) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=108"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=108"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=82";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=109"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=109"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -2583,7 +2583,7 @@ if ($id==108) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=110"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=110"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2603,7 +2603,7 @@ if ($id==109) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=110"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=110"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2623,7 +2623,7 @@ if ($id==110) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=111"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=111"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2643,7 +2643,7 @@ if ($id==111) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=112"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=112"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2663,7 +2663,7 @@ if ($id==112) {
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="historia?id=113"><button id="continuar">Continuar.</button></a>';
+  echo '<a href="historia.php?id=113"><button id="continuar">Continuar.</button></a>';
 
   echo '</div>';
 }
@@ -2687,13 +2687,13 @@ if ($id==113) {
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
 
-  echo '<a href="historia?id=115"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=115"><button id="escolha1">'.$dados['texto_escolha'].'</button></a>';
 
   $sql = "SELECT texto_escolha FROM escolha WHERE id_escolha=84";
   $resultado = mysqli_query($conexao, $sql);
   $dados = mysqli_fetch_assoc($resultado);
   
-  echo '<a href="historia?id=116"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
+  echo '<a href="historia.php?id=116"><button id="escolha2">'.$dados['texto_escolha'].'</button></a>';
 
   echo '</div>';
 }
@@ -2716,7 +2716,7 @@ if($id==115){
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
@@ -2736,7 +2736,7 @@ if($id==116){
 
   echo ''.$dados['conteudo_historia'].'';
 
-  echo '<a href="painel"><button id="continuar">Voltar para o inicio.</button></a>';
+  echo '<a href="painel.php"><button id="continuar">Voltar para o inicio.</button></a>';
 
   echo '</div>';
 }
