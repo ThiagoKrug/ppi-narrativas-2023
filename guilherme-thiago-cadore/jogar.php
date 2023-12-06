@@ -22,17 +22,39 @@
   <div class="conteiner">
     <div id="corpao">
       <div class="desc">
-        <h1>Você está na pele de Marcelino, um estudioso que se encontra no meio do caos do ataque de Julio Cesar na cidade de Alexandria.
-
+        <h1 class="texto">Você está na pele de Marcelino, um estudioso que se encontra no meio do caos do ataque de Julio Cesar na cidade de Alexandria.</h1>
 
       </div class="link">
-      <div class="botao">
-      <a href="jogo.php?id_historia=1">jogar</a>
-</div>
+      <div class="invisivel" id="botao">
+        <a href="jogo.php?id_historia=1">jogar</a>
+      </div>
     </div>
   </div>
   </div>
   </div>
+          <script>
+            function typeWrite(elemento) {
+              const textoArray = elemento.innerHTML.split('');
+              elemento.innerHTML = ' ';
+              textoArray.forEach(function(letra, i) {
+
+                setTimeout(function() {
+                  elemento.innerHTML += letra;
+                }, 50 * i)
+
+              });
+              setTimeout(function() {
+                visibility();
+              }, 50 * (textoArray.length + 10));
+            }
+            const titulo = document.querySelector('.texto');
+            typeWrite(titulo);
+            
+            function visibility(){
+              document.getElementById("botao").style.visibility = "visible";
+            }
+            
+          </script>
 </body>
 
 </html>

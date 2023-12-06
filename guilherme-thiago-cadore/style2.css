@@ -51,7 +51,7 @@ body {
     border-radius: 10px;
 }
 
-.botao {
+#botao {
     border: solid 5px rgb(206, 193, 174);
     padding: 15px;
     background-color: rgba(163, 129, 55, 0.767);
@@ -77,4 +77,8 @@ a{
 .img {
     width: 50%;
     margin-left: 38.1%;
+}
+
+.invisivel{
+    visibility: hidden;
 }

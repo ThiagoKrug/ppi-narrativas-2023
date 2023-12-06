@@ -42,6 +42,7 @@ $conexao = conectar();
 
         <div class= "escolhas"> <button><a href="jogar.php"> jogar </a></button><br> <br> </div>
         <div class= "escolhas"> <button><a href="criarhist.php"> criar historia </a></button><br> <br> </div>
+        <div class= "escolhas"> <button><a href="sair.php"> sair </a></button><br> <br> </div>
     </div>
 
 </body>
