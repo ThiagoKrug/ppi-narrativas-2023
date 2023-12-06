@@ -1,38 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar</title>
 </head>
-<STYLE TYPE="text/css">
-    BODY {
-        background-image: url(imagens/fundo.png);
-    }
-</STYLE>
-<div class="titulo">
+<body>
 
-    <body>
+    <h1> Cadastrar Escolha </h1>
 
-        <div class="titulo">
-            <h1> Cadastrar Escolha </h1>
-        </div>
-        <div class="conteiner">
+    <form action="cadescolha.php" method="post">
+        id de origem
+        <input type="number" name="id_origem"> <br> <br>
+        id de destino
+        <input type="text" name="id_destino"> <br> <br>
+        descricao da alternativa
+        <input type="text" name="descricao_alt"> <br> <br>
+        <input type="submit" value="Cadastrar">
+    </form>
 
-            <form action="cadescolha.php" method="post">
-                id de origem
-                <input type="number" name="id_origem"> <br> <br>
-                id de destino
-                <input type="text" name="id_destino"> <br> <br>
-                descricao da alternativa
-                <input type="text" name="descricao_alt"> <br> <br>
-                <input type="submit" value="Cadastrar">
-            </form>
-        </div>
-
-    </body>
-
+</body>
 </html>
