@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 04-Dez-2023 às 22:16
+-- Tempo de geração: 05-Dez-2023 às 23:29
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 7.4.33
 
@@ -203,22 +203,22 @@ INSERT INTO `escolha` (`id_escolha`, `escolha`, `id_consequencia`, `id_historia`
 (5, 'Ir pela ponte de Madeira:', 30, 5),
 (6, 'Levar a chave, um Santo e um livro:', 5, 4),
 (7, 'Levar a bússola, um santo e um livro', 39, 4),
-(8, 'Ir de Balsa: ', 31, 5),
-(9, '“I don’t speak English”:', 32, 6),
-(10, ' “I would love that”:', 33, 6),
-(11, 'Continuar escutando Eliot:', 34, 7),
-(12, 'Ir até a igreja:', 35, 7),
-(13, 'Procurar na volta da igreja:', 36, 8),
-(14, 'Procurar no altar: ', 37, 8),
+(8, 'Ir de Balsa', 31, 5),
+(9, '“I don’t speak English”', 32, 6),
+(10, ' “I would love that”', 33, 6),
+(11, 'Continuar escutando Eliot', 34, 7),
+(12, 'Ir até a igreja', 35, 7),
+(13, 'Procurar na volta da igreja', 36, 8),
+(14, 'Procurar no altar', 37, 8),
 (15, 'Continuar', 9, 0),
-(17, 'Contar a Eliot:', 40, 10),
-(18, 'Alex parte para a trilha:', 41, 10),
-(19, 'Continuar o caminho: ', 42, 11),
-(20, 'Trocar o caminho:', 43, 11),
-(21, 'Dormir em cima da árvore:', 44, 13),
-(22, 'Dormir na casa abandonada: ', 45, 13),
-(23, 'Comer a maçã: ', 46, 14),
-(24, 'Não comer a maçã: ', 47, 14),
+(17, 'Contar a Eliot', 40, 10),
+(18, 'Alex parte para a trilha', 41, 10),
+(19, 'Continuar o caminho', 42, 11),
+(20, 'Trocar o caminho', 43, 11),
+(21, 'Dormir em cima da árvore', 44, 13),
+(22, 'Dormir na casa abandonada', 45, 13),
+(23, 'Comer a maçã', 46, 14),
+(24, 'Não comer a maçã', 47, 14),
 (25, 'Suas costas estão apontadas', 48, 15),
 (26, 'Seu peito está apontado', 49, 15),
 (27, 'Tentar enxergar Nicarau', 50, 16),
@@ -408,7 +408,7 @@ INSERT INTO `historia` (`id_historia`, `texto`, `imagem`) VALUES
 (44, 'Alex decide passar a noite em cima da árvore e com isso acaba sendo picado por uma cobra venenosa.', NULL),
 (45, 'Alex decide passar a noite em uma casa abandonada onde ele encontra um lampião para não ficar no breu.', 'imagens/dormircasaabandonada.jpg'),
 (46, 'Alex decide comer a maçã e acaba se envenenando com ela.', NULL),
-(47, 'Alex decide não comer a maçã pois fica com medo de acabar se envenenando. Então ele prefere ficar com fome.', 'imagens/maçaenvenenada'),
+(47, 'Alex decide não comer a maçã pois fica com medo de acabar se envenenando. Então ele prefere ficar com fome.', 'imagens/maçaenvenenada.jpg'),
 (48, 'Alex não soube se guiar e acabou escolhendo o caminho errado .', NULL),
 (49, 'Alex conseguiu ter noção de orientação e consegui escolher o caminho correto.\r\n', NULL),
 (50, 'Alex se aproxima da beira do mirante e ao pisar em falso desaba precipício abaixo. ', NULL),

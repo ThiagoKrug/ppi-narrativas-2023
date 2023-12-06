@@ -110,6 +110,7 @@ while ($dado = mysqli_fetch_assoc($resultad)){
    if($id == 61){
     echo'<a href="inicio.php"> Voltar </a>';
    }
+   
     ?>   
 
 <a  href="sinopse.php?id=<?php echo $dado['id_consequencia']; ?>"> <?php echo $dado['escolha']; ?> <br>

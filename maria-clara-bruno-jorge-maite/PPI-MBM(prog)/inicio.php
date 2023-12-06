@@ -167,4 +167,3 @@ $logado = $_SESSION['user'];
 
 </body>
 </html>
-
